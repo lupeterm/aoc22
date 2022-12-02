@@ -1,0 +1,2 @@
+print(sum([z+{1:6,-2:6,-1:0,2:0,0:3}[z-y] for y,z in [list(map(int,x.split(' '))) for x in open('2.in').read().replace('X','1').replace('Y','2').replace('Z','3').replace('A','1').replace('B','2').replace('C','3').splitlines()]]))
+print(sum([{1:0,2:3,3:6}[z]+{2:y,3:{1:2,2:3,3:1}[y], 1:{1:3,2:1,3:2}[y]}[z] for y,z in [list(map(int,x.split(' '))) for x in open('2.in').read().replace('X','1').replace('Y','2').replace('Z','3').replace('A','1').replace('B','2').replace('C','3').splitlines()]]))
