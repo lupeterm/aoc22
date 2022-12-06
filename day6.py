@@ -1,0 +1,2 @@
+print([[i+4 for i, c in enumerate(x) if len(set(x[i:i+4]))==4] for x in [open('6.in').read()]][0][0])
+print([[i+14 for i, c in enumerate(x) if len(set(x[i:i+14]))==14] for x in [open('6.in').read()]][0][0])
